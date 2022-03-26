@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Teams</title>
+    <link rel="stylesheet" href="teams.css">
+    <style>
+        *{
+         font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="new-project-2022-01-12t145429170-25-removebg-preview.png" alt="https://www.iplt20.com/">
+        </div>
+
+
+        <!-- this is for background logo -->
+        <div class="background">
+            <img src="BCCI_logo-removebg-preview.png" id="logobg" alt="">
+        </div>
+
+        <div class="heading">
+            <h1 id="head">
+                Royal Challengers Bangalore
+            </h1>
+
+            <p style="font-weight: 500;">
+                The Indian Premier League (IPL) is a Twenty-20 cricket tournament league established with the objective of promoting cricket in India and thereby nurturing young and talented players. The league is an annual event where teams representing different Indian cities compete against each other.
+            </p>
+
+            <button><a href="https://www.iplt20.com/teams/men">WATCH NOW</a></button>
+        </div>
+
+        <!-- this is for main image -->
+
+        <div class="image">
+            <img id="myimage" src="wp7461619-rcb-ipl-wallpapers-removebg-preview.png" alt="">
+        </div>
+
+
+
+
+        <!-- now navbar -->
+
+        <div class="navbar">
+            <ul>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link smoothScroll">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.iplt20.com/teams/men" class="nav-link smoothScroll">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.iplt20.com/stats/2021" class="nav-link smoothScroll">Performance</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.iplt20.com/fantasy" class="nav-link smoothScroll">Fantasy</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- html code is done -->
+
+        <!-- now jump to css code -->
+
+        <!-- one class is missing -->
+
+        <div class="empty">
+
+        </div>
+
+        <!-- this is for remaining teams -->
+
+        <div class="list">
+            <ol>
+                <li onclick="myFun('csk3 (1).png', 'gold', 'Chennai Super Kings', 'BCCI_logo-removebg-preview.png',)">CSK</li>
+
+
+                <!-- first one is sucessfully working -->
+                <!-- copy and change the image name, color -->
+
+                <li onclick="myFun('ddlogo.png', 'dodgerblue', 'Delhi Capitals', 'BCCI_logo-removebg-preview.png')">DC</li>
+                <li onclick="myFun('milogo.png', 'blue', 'Mumbai Indians', 'BCCI_logo-removebg-preview.png')">MI</li>
+                <li onclick="myFun('srhlogo.png', 'orangered', 'Sunrisers Hydrabad','BCCI_logo-removebg-preview.png')">SRH</li>
+                <li onclick="myFun('punjab-kings-new-logo-removebg-preview (2).png', 'red','Punjab Kings', 'BCCI_logo-removebg-preview.png')">PBKS</li>
+                <li onclick="myFun('Rajasthan-Royals-Logo-PNG-removebg-preview.png', '#ff3385', 'Rajasthan Royals', 'BCCI_logo-removebg-preview.png')">RR</li>
+                <li onclick="myFun('659a4724c4eeb0b246a5656123c515fd-removebg-preview.png', 'purple', 'Kolkata Knight Riders', 'BCCI_logo-removebg-preview.png')">KKR</li>
+                <li onclick="myFun('gujarat-titans6813-removebg-preview (3).png', '#1B2631', 'Gujrat Titans', 'BCCI_logo-removebg-preview.png')">GT</li>
+                <li onclick="myFun('Lucknow-Super-Giants-removebg-preview.png', '#7E36B9 ', 'Lucknow Super Giants', 'BCCI_logo-removebg-preview.png')">LSB</li>
+            </ol>
+        </div>
+
+    </div>
+
+
+
+
+
+
+<script>
+
+    function myFun(image, colour, head, logo){
+        document.getElementById('myimage').src=image;
+        document.querySelector('.empty').style.backgroundColor=colour;
+        document.querySelector('button').style.backgroundColor=colour;
+        document.getElementById('head').innerHTML=head;
+        document.getElementById('logobg').src=logo;
+    }
+
+
+</script>
+
+</body>
+</html>
